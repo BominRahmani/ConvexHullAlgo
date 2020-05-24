@@ -37,7 +37,7 @@ function draw() {
   for(let p of hull){
     vertex(p.x,p.y)
   }
-  endShape();
+  endShape(CLOSE);
 
   //animate left most point
   stroke(0,255,0);
@@ -83,3 +83,10 @@ function draw() {
   }
   }
 }
+
+  function divideConq(){
+    //given a set of points split it up
+    if(points.length <= 2){
+      return;
+    }
+  }
